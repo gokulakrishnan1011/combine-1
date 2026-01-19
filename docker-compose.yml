@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   website1:
-    image: website:latest
+    image: website:${BUILD_NUMBER}
     container_name: website1
     ports:
       - "80:80"
@@ -12,3 +12,4 @@ services:
     container_name: website2
     ports:
       - "8081:80"
+
